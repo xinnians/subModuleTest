@@ -1,2 +1,10 @@
 rootProject.name='subModuleTest'
 include ':app'
+
+
+include ':base'
+project(':base').projectDir = new File("core/base")
+include ':repository'
+project(':repository').projectDir = new File("core/repository")
+include ':resource'
+project(':resource').projectDir = new File("core/resource")
